@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./public/icon.webp" />
+    <title>TETRIS</title>
+  </head>
+  <body>
+    <h1 id="points">0</h1>
+    <canvas id="canvas"></canvas>
+    <div class="buttons">
+      <button onclick="rotatePiece()">↻</button> <br />
+      <button onclick="movePiece(-1, 0)">←</button
+      ><button onclick="movePiece(1, 0)">→</button> <br />
+      <button onclick="movePiece(0, 1)">↓</button>
+    </div>
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>

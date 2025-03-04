@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow: hidden;
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+  gap: 5vh;
+}
+
+canvas {
+  height: 50%;
+}
+
+.buttons {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .buttons {
+    text-align: center;
+    display: block;
+    button {
+      margin: 1vh 6vw;
+      width: 5vh;
+      height: 5vh;
+      background-color: #000;
+      border: none;
+      border-radius: 1vh;
+    }
+  }
+}
