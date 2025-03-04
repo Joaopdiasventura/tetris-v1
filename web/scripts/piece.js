@@ -17,10 +17,9 @@ export class Piece {
       for (let x = 0; x < cols; x++)
         newShape[x][rows - y - 1] = this.shape[y][x];
 
+    this.shape = newShape;
     if (this.x == 0) this.x += 1;
     if (this.x == COLS - this.shape[0].length) this.x -= 1;
-
-    this.shape = newShape;
   }
 
   canMove(board, dx, dy) {
